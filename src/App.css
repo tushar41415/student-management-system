@@ -1,0 +1,97 @@
+/* 🎨 Color Theme */
+:root {
+  --primary-bg: #121212;
+  --gradient-start: #2c3e50;
+  --gradient-end: #4ca1af;
+  --text-color: #f1f1f1;
+  --button-bg: #2980b9;
+  --button-hover: #3498db;
+  --border-color: #444;
+}
+
+/* 🌟 Background Gradient */
+body {
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+/* 📦 Container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+/* 🔘 Buttons */
+button {
+  background: var(--button-bg);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background: var(--button-hover);
+  transform: translateY(-2px);
+}
+
+/* 🖊️ Inputs */
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+  border-color: var(--button-bg);
+  box-shadow: 0px 0px 8px rgba(52, 152, 219, 0.5);
+}
+
+/* 📜 Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+table th, table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+}
+
+table tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* 💡 Links */
+a {
+  color: var(--button-bg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
